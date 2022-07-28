@@ -1,0 +1,11 @@
+{
+    "SortAxis": [
+        1,
+        1,
+        1
+    ],
+    "CurrentAxis": 2,
+    "AntiAliasing": 0,
+    "UseLight": false,
+    "TexturesAsync": false
+}

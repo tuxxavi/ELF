@@ -1,0 +1,7 @@
+{
+    "MasterVolume": 1,
+    "RolloffScale": 1,
+    "DopplerFactor": 1,
+    "MinDist": 2,
+    "MaxDist": 10
+}

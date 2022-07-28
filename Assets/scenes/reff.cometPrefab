@@ -1,0 +1,245 @@
+{
+    "RootID": "0",
+    "GameObjects": [
+        {
+            "Name": "reff",
+            "ID": "8292460921407181655",
+            "ParentID": "0",
+            "Enabled": true,
+            "IsUpEnabled": true,
+            "Selectable": true,
+            "UpSelectable": true,
+            "Visible": true,
+            "UpVisible": true,
+            "IsStatic": false,
+            "IsPrefab": true,
+            "Layer": 1,
+            "Tag": "Untagged",
+            "PrefabID": "14351695247068571992",
+            "Components": [
+                {
+                    "Type": 0,
+                    "Enabled": true,
+                    "ID": "11129324552487286247",
+                    "Position": [
+                        -6.4555253982543945,
+                        5.0757055282592773,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        0,
+                        -0.7071068286895752,
+                        0.70710670948028564
+                    ],
+                    "Scale": [
+                        0.9999585747718811,
+                        0.9999585747718811,
+                        1
+                    ]
+                },
+                {
+                    "Type": 3,
+                    "Enabled": true,
+                    "ID": "10954211884190060638",
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "FlipX": false,
+                    "FlipY": false,
+                    "Sort": true,
+                    "Material": "0",
+                    "UsesLight": false,
+                    "OrderInLayer": 0,
+                    "SortingLayerName": "Default"
+                },
+                {
+                    "Type": 4,
+                    "Enabled": true,
+                    "ID": "9111017377111501413",
+                    "ScriptID": "5204554933236673156"
+                }
+            ]
+        },
+        {
+            "Name": "red_line",
+            "ID": "6586745417247515744",
+            "ParentID": "8292460921407181655",
+            "Enabled": true,
+            "IsUpEnabled": true,
+            "Selectable": true,
+            "UpSelectable": true,
+            "Visible": true,
+            "UpVisible": true,
+            "IsStatic": false,
+            "IsPrefab": true,
+            "Layer": 1,
+            "Tag": "Untagged",
+            "PrefabID": "14351695247068571992",
+            "Components": [
+                {
+                    "Type": 0,
+                    "Enabled": true,
+                    "ID": "286042814238693557",
+                    "Position": [
+                        5.1999998092651367,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        0,
+                        0.7071068286895752,
+                        0.70710670948028564
+                    ],
+                    "Scale": [
+                        1.000041127204895,
+                        6.4999995231628418,
+                        1
+                    ]
+                },
+                {
+                    "Type": 3,
+                    "Enabled": true,
+                    "ID": "11914247436589344434",
+                    "Texture": "4390594663888171626",
+                    "Sprite": "7958774285498211535",
+                    "Color": [
+                        1,
+                        0,
+                        0,
+                        1
+                    ],
+                    "FlipX": false,
+                    "FlipY": false,
+                    "Sort": true,
+                    "Material": "0",
+                    "UsesLight": false,
+                    "OrderInLayer": 0,
+                    "SortingLayerName": "Default"
+                }
+            ]
+        },
+        {
+            "Name": "yellow_line",
+            "ID": "15786841336949217281",
+            "ParentID": "8292460921407181655",
+            "Enabled": true,
+            "IsUpEnabled": true,
+            "Selectable": true,
+            "UpSelectable": true,
+            "Visible": true,
+            "UpVisible": true,
+            "IsStatic": false,
+            "IsPrefab": true,
+            "Layer": 1,
+            "Tag": "Untagged",
+            "PrefabID": "14351695247068571992",
+            "Components": [
+                {
+                    "Type": 0,
+                    "Enabled": true,
+                    "ID": "3679390637651682483",
+                    "Position": [
+                        5.1999998092651367,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        0,
+                        0.7071068286895752,
+                        0.70710670948028564
+                    ],
+                    "Scale": [
+                        1.0000408887863159,
+                        6.4999985694885254,
+                        1
+                    ]
+                },
+                {
+                    "Type": 3,
+                    "Enabled": true,
+                    "ID": "10192301260603063182",
+                    "Texture": "4390594663888171626",
+                    "Sprite": "7958774285498211535",
+                    "Color": [
+                        0.93922650814056396,
+                        1,
+                        0,
+                        1
+                    ],
+                    "FlipX": false,
+                    "FlipY": false,
+                    "Sort": true,
+                    "Material": "0",
+                    "UsesLight": false,
+                    "OrderInLayer": 0,
+                    "SortingLayerName": "Default"
+                }
+            ]
+        },
+        {
+            "Name": "sprite",
+            "ID": "850541237776482766",
+            "ParentID": "8292460921407181655",
+            "Enabled": true,
+            "IsUpEnabled": true,
+            "Selectable": true,
+            "UpSelectable": true,
+            "Visible": true,
+            "UpVisible": true,
+            "IsStatic": false,
+            "IsPrefab": true,
+            "Layer": 1,
+            "Tag": "Untagged",
+            "PrefabID": "14351695247068571992",
+            "Components": [
+                {
+                    "Type": 0,
+                    "Enabled": true,
+                    "ID": "17904450141675018276",
+                    "Position": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "Scale": [
+                        1.0000414848327637,
+                        1.0000414848327637,
+                        1
+                    ]
+                },
+                {
+                    "Type": 3,
+                    "Enabled": true,
+                    "ID": "619302143739438770",
+                    "Texture": "12886049807437995919",
+                    "Sprite": "2570213832527958459",
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "FlipX": false,
+                    "FlipY": false,
+                    "Sort": true,
+                    "Material": "0",
+                    "UsesLight": false,
+                    "OrderInLayer": 0,
+                    "SortingLayerName": "Default"
+                }
+            ]
+        }
+    ]
+}

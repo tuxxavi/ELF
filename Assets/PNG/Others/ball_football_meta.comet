@@ -1,0 +1,36 @@
+{
+    "ID": "3547709624463960097",
+    "Type": 0,
+    "TextureType": 0,
+    "DXT": 3,
+    "Read\/Write": false,
+    "WrapMode": 2,
+    "WrapS": 33071,
+    "WrapT": 33071,
+    "BorderColor": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "Filter": 0,
+    "PixelsPerUnit": 40,
+    "SpriteType": 0,
+    "Sprites": [
+        {
+            "SpriteID": "13301779087029405501",
+            "Rect": [
+                0,
+                0,
+                14,
+                16
+            ],
+            "PivotType": 3,
+            "Pivot": [
+                0,
+                0
+            ],
+            "Name": "ball_football"
+        }
+    ]
+}

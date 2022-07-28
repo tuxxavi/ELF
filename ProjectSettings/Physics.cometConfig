@@ -1,0 +1,26 @@
+{
+    "Gravity": [
+        0,
+        -9.8100004196166992
+    ],
+    "VelIter": 8,
+    "PosIter": 3,
+    "TimeToSleep": 0.5,
+    "LinearTol": 0.0099999997764825821,
+    "AngularTol": 2,
+    "Contact": 0.0099999997764825821,
+    "LinearCorr": 0.20000000298023224,
+    "AngularCorr": 8,
+    "MaxTr": 100,
+    "MaxRot": 360,
+    "Baugarte": 0.20000000298023224,
+    "BaugarteImpact": 0.75,
+    "HitTriggers": true,
+    "BounceThresh": 1,
+    "Collisions": [
+        {
+            "ID": 1,
+            "Mask": 2147483647
+        }
+    ]
+}

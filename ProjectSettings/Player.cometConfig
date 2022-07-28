@@ -1,0 +1,16 @@
+{
+    "Product": "Default Product",
+    "Company": "Default Company",
+    "Version": "0.1",
+    "CursorHotspot": [
+        0,
+        0
+    ],
+    "CursorImage": "0",
+    "Icon": "",
+    "Platforms": [
+        {
+            "Platform": 1
+        }
+    ]
+}

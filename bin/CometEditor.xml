@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CometEditor</name>
+    </assembly>
+    <members>
+        <member name="M:CometEditor.AssetDataBase.SetDirty(CometEngine.Resource)">
+            <summary>
+            Call it when changing a Resource and you do not want to lose the changes
+            </summary>
+        </member>
+        <member name="M:CometEditor.AssetDataBase.SetDirty(CometEngine.SubResource)">
+            <summary>
+            Call it when changing a SubResource and you do not want to lose the changes
+            </summary>
+        </member>
+    </members>
+</doc>

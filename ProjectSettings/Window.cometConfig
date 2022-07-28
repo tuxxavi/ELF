@@ -1,0 +1,18 @@
+{
+    "StartMode": 0,
+    "Resizable": true,
+    "Bordered": true,
+    "Size": [
+        1920,
+        1080
+    ],
+    "MinimumSize": [
+        878,
+        321
+    ],
+    "MaximumSize": [
+        0,
+        0
+    ],
+    "Brightness": 1
+}

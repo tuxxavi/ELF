@@ -1,0 +1,36 @@
+{
+    "ID": "17183051848449549125",
+    "Type": 0,
+    "TextureType": 0,
+    "DXT": 3,
+    "Read\/Write": false,
+    "WrapMode": 2,
+    "WrapS": 33071,
+    "WrapT": 33071,
+    "BorderColor": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "Filter": 0,
+    "PixelsPerUnit": 40,
+    "SpriteType": 0,
+    "Sprites": [
+        {
+            "SpriteID": "3566585627604369884",
+            "Rect": [
+                0,
+                0,
+                21,
+                31
+            ],
+            "PivotType": 3,
+            "Pivot": [
+                0,
+                0
+            ],
+            "Name": "characterGreen (1)"
+        }
+    ]
+}

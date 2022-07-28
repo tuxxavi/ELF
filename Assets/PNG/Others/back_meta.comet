@@ -1,0 +1,36 @@
+{
+    "ID": "6186143949573627719",
+    "Type": 0,
+    "TextureType": 0,
+    "DXT": 3,
+    "Read\/Write": false,
+    "WrapMode": 2,
+    "WrapS": 33071,
+    "WrapT": 33071,
+    "BorderColor": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "Filter": 0,
+    "PixelsPerUnit": 100,
+    "SpriteType": 0,
+    "Sprites": [
+        {
+            "SpriteID": "6160236805434535166",
+            "Rect": [
+                0,
+                0,
+                800,
+                560
+            ],
+            "PivotType": 3,
+            "Pivot": [
+                0,
+                0
+            ],
+            "Name": "back"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "ID": "7736157210163963467",
+    "Type": 0,
+    "TextureType": 0,
+    "DXT": 3,
+    "Read\/Write": false,
+    "WrapMode": 2,
+    "WrapS": 33071,
+    "WrapT": 33071,
+    "BorderColor": [
+        0,
+        0,
+        0,
+        1
+    ],
+    "Filter": 0,
+    "PixelsPerUnit": 40,
+    "SpriteType": 0,
+    "Sprites": [
+        {
+            "SpriteID": "15408693999611092174",
+            "Rect": [
+                0,
+                0,
+                21,
+                31
+            ],
+            "PivotType": 3,
+            "Pivot": [
+                0,
+                0
+            ],
+            "Name": "characterWhite (1)"
+        }
+    ]
+}
