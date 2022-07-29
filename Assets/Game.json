@@ -1,0 +1,128 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Xavi",
+      "number": 76,
+      "position": "OL",
+      "fisic": 90,
+      "habilidad ": 90,
+      "velocidad": 50,
+      "potencia ": 90
+    },
+    {
+      "id": 2,
+      "name": "Nordi",
+      "number": 21,
+      "position": "RB",
+      "fisic": 90,
+      "habilidad ": 90,
+      "velocidad": 50,
+      "potencia ": 90
+    }
+  ],
+  "equipos ": [
+    {
+      "id": 1,
+      "name": "Dragons",
+      "pais": "Spain",
+      "players": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Viena",
+      "pais": "Spain",
+      "players": [
+        1
+      ]
+    }
+  ],
+  "ligas": {
+    "elf": {
+      "name": "Elf",
+      "equipos ": [
+        1
+      ],
+      "eventos": [
+        {
+          "team_1": {
+            "id": 1,
+            "resultado": 0,
+            "timeouts": 3,
+            "touchdown": [
+              1
+            ]
+          },
+          "team_2": {
+            "id": 1,
+            "resultado": 0,
+            "timeouts": 3,
+            "touchdown": [
+              1
+            ]
+          },
+          "cuarto": 1,
+          "date": 55555,
+          "posesion": 1,
+          "intento": 1,
+          "yarda": 12
+        }
+      ],
+      "clasificación ": [
+        {
+          "equipo": 1,
+          "puntos ": 12,
+          "pf": 12,
+          "pc": 0,
+          "orden": 0,
+          "win": 1,
+          "lose": 0
+        }
+      ]
+    },
+    "fefa": {
+      "name": "Elf",
+      "equipos ": [
+        1
+      ],
+      "eventos": [
+        {
+          "team_1": {
+            "id": 1,
+            "resultado": 0,
+            "timeouts": 3,
+            "touchdown": [
+              1
+            ]
+          },
+          "team_2": {
+            "id": 1,
+            "resultado": 0,
+            "timeouts": 3,
+            "touchdown": [
+              1
+            ]
+          },
+          "cuarto": 1,
+          "date": 55555,
+          "posesion": 1,
+          "intento": 1,
+          "yarda": 12
+        }
+      ],
+      "clasificación ": [
+        {
+          "equipo": 1,
+          "puntos ": 12,
+          "pf": 12,
+          "pc": 0,
+          "orden": 0,
+          "win": 1,
+          "lose": 0
+        }
+      ]
+    }
+  }
+}
