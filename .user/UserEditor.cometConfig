@@ -15,7 +15,7 @@
     "DrawParametricLight": true,
     "DrawFreeformLight": true,
     "DrawGizmos": true,
-    "Grid": true,
+    "Grid": false,
     "PivotGizmo": true,
     "HiddenObjs": false,
     "GridColor": [
@@ -122,5 +122,10 @@
     "Platforms": [
         {}
     ],
-    "OpenedScenes": []
+    "OpenedScenes": [
+        {
+            "ID": "10352877423378272884",
+            "Active": true
+        }
+    ]
 }
