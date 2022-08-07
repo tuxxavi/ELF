@@ -349,6 +349,366 @@
             Returns an array of all InputGroup
             </summary>
         </member>
+        <member name="T:CometEngine.Json.JsonArray">
+            <summary>
+            Class that represents json array data object.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonArray.AddObject">
+            <summary>
+            Adds a new json object inside the array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonArray.SetObject(CometEngine.Json.JsonObject)">
+            <summary>
+            Duplicates the given json object and adds it inside the array.
+            </summary>
+            <param name="jsonObject">Json object to add to the array</param>
+            <returns>Returns the new json object added and clonned from the given one.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonArray.RemoveObject(System.UInt32)">
+            <summary>
+            Removes the object at the given index.
+            </summary>
+            <param name="index">The index that points to the object to remove.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonArray.GetObject(System.UInt32)">
+            <summary>
+            Gets the requested json object if the index is valid.
+            </summary>
+            <param name="index">The index for the requested object.</param>
+            <returns>Returns a valid object if the index is valid or null if it is not.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonArray.GetSize">
+            <summary>
+            Gets the amount of json objects that it contains.
+            </summary>
+            <returns>Returns the amount of json objects that it contains.</returns>
+        </member>
+        <member name="T:CometEngine.Json.JsonData">
+            <summary>
+            Class that contains json data in object or array format.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.#ctor">
+            <summary>
+            Creates the json object. It is recommended to call Free() once this object is no more needed in order to free its memory.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Finalize">
+            <summary>
+            Removes the json object.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Duplicate``1">
+            <summary>
+            Duplicates the json data.
+            </summary>
+            <returns>Returns the new duplicated data.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Duplicate">
+            <summary>
+            Duplicates the json data.
+            </summary>
+            <returns>Returns the new duplicated data.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Clear">
+            <summary>
+            Removes every object attached that this json data contains.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.ToString">
+            <summary>
+            Transforms the json data to string.
+            </summary>
+            <returns>Returns the json string.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.ToPrettyString">
+            <summary>
+            Transforms the json data to pretty string.
+            </summary>
+            <returns>Returns the json string.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Equals(System.Object)">
+            <summary>
+            Checks if the given object is the same.
+            </summary>
+            <param name="obj">The object to check.</param>
+            <returns>Returns true if so, false otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Equals(CometEngine.Json.JsonData)">
+            <summary>
+            Checks if the given json data is the same.
+            </summary>
+            <param name="jsonData">The json data to check.</param>
+            <returns>Returns true if so, false otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.op_Equality(CometEngine.Json.JsonData,CometEngine.Json.JsonData)">
+            <summary>
+            Operator that checks if the two json data are the same.
+            </summary>
+            <param name="jsonData1">The json data 1 to check.</param>
+            <param name="jsonData2">The json data 2 to check.</param>
+            <returns>Returns true if so, false otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.op_Inequality(CometEngine.Json.JsonData,CometEngine.Json.JsonData)">
+            <summary>
+            Operator that checks if the two json data are different.
+            </summary>
+            <param name="jsonData1">The json data 1 to check.</param>
+            <param name="jsonData2">The json data 2 to check.</param>
+            <returns>Returns true if so, false otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonData.Free">
+            <summary>
+            Removes and invalidates the json data. It should be called when the json has been created directly inside code in order to free its memory.
+            </summary>
+        </member>
+        <member name="T:CometEngine.Json.JsonObject">
+            <summary>
+            Class that represents a json object.
+            </summary>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.Has(System.String)">
+            <summary>
+            Checks if the given key exists.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns true if so, false otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetInt(System.String,System.Int32)">
+            <summary>
+            Gets the int value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetInt(System.String,System.Int32)">
+            <summary>
+            Sets the given int value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetIntArray(System.String)">
+            <summary>
+            Gets the int array value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or null if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetIntArray(System.String,System.Int32[])">
+            <summary>
+            Sets the given int array value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetFloat(System.String,System.Single)">
+            <summary>
+            Gets the float value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetFloat(System.String,System.Single)">
+            <summary>
+            Sets the given float value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetFloatArray(System.String)">
+            <summary>
+            Gets the float array value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or null if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetFloatArray(System.String,System.Single[])">
+            <summary>
+            Sets the given float array value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetBool(System.String,System.Boolean)">
+            <summary>
+            Gets the bool value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetBool(System.String,System.Boolean)">
+            <summary>
+            Sets the given bool value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetBoolArray(System.String)">
+            <summary>
+            Gets the bool array value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or null if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetBoolArray(System.String,System.Boolean[])">
+            <summary>
+            Sets the given bool array value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetString(System.String,System.String)">
+            <summary>
+            Gets the string value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetString(System.String,System.String)">
+            <summary>
+            Sets the given string value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetStringArray(System.String)">
+            <summary>
+            Gets the string array value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or null if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetStringArray(System.String,System.String[])">
+            <summary>
+            Sets the given string array value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetVector3(System.String)">
+            <summary>
+            Gets the Vector3 value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or Vector3.zero if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetVector3(System.String,CometEngine.Vector3)">
+            <summary>
+            Gets the Vector3 value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetVector3(System.String,CometEngine.Vector3)">
+            <summary>
+            Sets the given Vector3 value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetVector2(System.String)">
+            <summary>
+            Gets the Vector2 value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the value of the key or Vector2.zero if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetVector2(System.String,CometEngine.Vector2)">
+            <summary>
+            Gets the Vector2 value that matches the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <param name="defaultValue">The default value that will be returned if the key does not exist.</param>
+            <returns>Returns the value of the key or the default value if it does not exist.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetVector2(System.String,CometEngine.Vector2)">
+            <summary>
+            Sets the given Vector2 value to the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetObject(System.String)">
+            <summary>
+            Gets the requested object key. The returned object is a reference, so modifying it will change the json values.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the object if it exists or null otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetObject(System.String,CometEngine.Json.JsonObject)">
+            <summary>
+            Sets the given object. Note that the object is duplicated, so modifying it after setting it, it will not change anything.
+            </summary>
+            <param name="key">The key to insert the object.</param>
+            <param name="value">The object to set.</param>
+            <returns>Returns the new json object added and clonned from the given one.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.AddObject(System.String)">
+            <summary>
+            Adds an object to the given key. If the key was already in use, it will clear whatever it had.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>Returns the new object.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.GetArray(System.String)">
+            <summary>
+            Gets the array value that matches with the given key.
+            </summary>
+            <param name="key">The key to find.</param>
+            <returns>Returns the array if exists or null otherwise.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.AddArray(System.String)">
+            <summary>
+            Adds an array to the given key. If the key was already in use, it will clear whatever it had.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>Returns the new array.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.SetArray(System.String,CometEngine.Json.JsonArray)">
+            <summary>
+            Duplicates the given array and sets it at the given key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The array to set.</param>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.StringToJson(System.String)">
+            <summary>
+            Converts the given text to a json data object.
+            </summary>
+            <param name="jsonString">The string that contains the json.</param>
+            <returns>Returns the JsonObject or null if the string is invalid.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.FileToJson(System.String)">
+            <summary>
+            Loads the given file path and converts its text to json.
+            </summary>
+            <param name="path">The path to the json file.</param>
+            <returns>Returns the JsonObject or null if the operation fails.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.Serialize(System.Object)">
+            <summary>
+            Serializes the given object to a json object.
+            </summary>
+            <param name="obj">The object to serialize.</param>
+            <returns>Returns the json object.</returns>
+        </member>
+        <member name="M:CometEngine.Json.JsonObject.Deserialize``1(System.String)">
+            <summary>
+            Converts the given json string to the desired object.
+            </summary>
+            <typeparam name="T">The class to convert.</typeparam>
+            <param name="jsonString">The string that contains the json data.</param>
+            <returns>Returns the object holding the json data.</returns>
+        </member>
         <member name="F:CometEngine.SceneManagement.LoadSceneMode.SINGLE_AND_CLEAR_ALL">
             <summary>
             Destroy the immutable scene

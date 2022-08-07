@@ -1,6 +1,6 @@
 {
     "BuildPath": "",
-    "DisableLighting": true,
+    "DisableLighting": false,
     "PrefabBackground": [
         0.20000000298023224,
         0.40000000596046448,
@@ -15,9 +15,9 @@
     "DrawParametricLight": true,
     "DrawFreeformLight": true,
     "DrawGizmos": true,
-    "Grid": false,
+    "Grid": true,
     "PivotGizmo": true,
-    "HiddenObjs": true,
+    "HiddenObjs": false,
     "GridColor": [
         1,
         1,
@@ -74,7 +74,7 @@
     "CullingMask": 1,
     "ClearOnPlay": true,
     "ErrorPause": false,
-    "AutScroll": false,
+    "AutScroll": true,
     "ShowErrors": true,
     "ShowWarnings": true,
     "ShowMessages": true,
@@ -122,10 +122,5 @@
     "Platforms": [
         {}
     ],
-    "OpenedScenes": [
-        {
-            "ID": "10352877423378272884",
-            "Active": true
-        }
-    ]
+    "OpenedScenes": []
 }

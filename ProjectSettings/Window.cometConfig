@@ -3,8 +3,8 @@
     "Resizable": true,
     "Bordered": true,
     "Size": [
-        1920,
-        1080
+        1024,
+        768
     ],
     "MinimumSize": [
         878,

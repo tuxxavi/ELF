@@ -12,10 +12,10 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="CometEngine">
-      <HintPath>../InstalationDirectory/CometEngine.dll</HintPath>
+      <HintPath>C:/Users/tux_x/Documents/CometEngine_v0.8.1/InstalationDirectory/CometEngine.dll</HintPath>
     </Reference>
     <Reference Include="CometEditor" Condition="$(DefineConstants.Contains('COMET_EDITOR'))">
-      <HintPath>../InstalationDirectory/CometEditor.dll</HintPath>
+      <HintPath>C:/Users/tux_x/Documents/CometEngine_v0.8.1/InstalationDirectory/CometEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -26,10 +26,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\reff.cs" />
+    <Compile Include="Assets\scripts\Player1.cs" />
     <Compile Include="Assets\scripts\Enemigo.cs" />
     <Compile Include="Assets\scripts\Ball.cs" />
     <Compile Include="Assets\main.cs" />
-    <Compile Include="Assets\scripts\Player1.cs" />
   </ItemGroup>
 
 </Project>

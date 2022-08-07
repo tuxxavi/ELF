@@ -1,0 +1,11 @@
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\Assembly.dll
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\Assembly.pdb
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\CometEditor.dll
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\CometEngine.dll
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\CometEngine.xml
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\bin\CometEditor.xml
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\obj\Debug\Assembly.csproj.AssemblyReference.cache
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\obj\Debug\Assembly.csproj.CoreCompileInputs.cache
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\obj\Debug\Assembly.csproj.CopyComplete
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\obj\Debug\Assembly.dll
+C:\Users\tux_x\Documents\CometEngine_v0.8.1\ELF\obj\Debug\Assembly.pdb
