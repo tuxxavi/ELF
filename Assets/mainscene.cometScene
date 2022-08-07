@@ -1,6 +1,6 @@
 {
-    "Name": "scenes",
-    "Path": "Assets\/scenes.cometScene",
+    "Name": "mainscene",
+    "Path": "Assets\/mainscene.cometScene",
     "RootID": "0",
     "GameObjects": [
         {
