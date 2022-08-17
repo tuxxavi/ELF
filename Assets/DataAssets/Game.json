@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Xavi",
       "number": 76,
       "position": "OL",
@@ -11,7 +11,7 @@
       "potencia ": 90
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Nordi",
       "number": 21,
       "position": "RB",
@@ -21,17 +21,17 @@
       "potencia ": 90
     }
   ],
-  "equipos ": [
+  "equipos": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Dragons",
       "pais": "Spain",
       "players": [
-        1
+        0
       ]
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Viena",
       "pais": "Spain",
       "players": [
