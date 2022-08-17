@@ -66,9 +66,9 @@ class main : CometBehaviour
 		List<Player> Players =  mTeams[IdTeam].Players;
 		for (int j =0; j<Players.Count; j++)
 		{
-			GameObject PlayerScene = RuntimeAssets.LoadGameObject("scenes/player");
+			GameObject PlayerScene = RuntimeAssets.LoadGameObject("scenes/Player0");
 			//PlayerScene.name = Players[j].Name;
-			CometEngine.Object.Instantiate(PlayerScene);
+			print(CometEngine.Object.Instantiate(PlayerScene) != null);
 		}
 	}
 }
