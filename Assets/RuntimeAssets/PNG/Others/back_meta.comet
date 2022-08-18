@@ -14,16 +14,16 @@
         1
     ],
     "Filter": 0,
-    "PixelsPerUnit": 100,
+    "PixelsPerUnit": 1,
     "SpriteType": 0,
     "Sprites": [
         {
-            "SpriteID": "6160236805434535166",
+            "SpriteID": "4309581698405120665",
             "Rect": [
                 0,
                 0,
-                800,
-                560
+                1920,
+                1080
             ],
             "PivotType": 3,
             "Pivot": [

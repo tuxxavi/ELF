@@ -1,7 +1,10 @@
+using System.Numerics;
 using System;
 using System.Collections.Generic;
 using CometEngine;
 using CometEngine.Json;
+
+using PLayerFormation = System.Collections.Generic.Dictionary<System.String, CometEngine.Vector2>;
 
 class Player
 {
@@ -15,10 +18,15 @@ class Team
 	public List<Player> Players = new List<Player>();
 }
 
+
+
 class main : CometBehaviour
 {
 	private List<Team> mTeams = new List<Team>();
-	public PlayerSprite PlayerSprite;
+	private Dictionary<String, PLayerFormation> mFormaciones = new Dictionary<String, PLayerFormation>();
+	public PlayerSprite PlayerSprite = null;
+
+	int SUAU_TIENE_DIC = 0;
 
 	// Called before first frame
 	public void Start()
@@ -27,6 +35,10 @@ class main : CometBehaviour
 		JsonObject data = JsonObject.FileToJson(App.dataAssetsPath + "Game.json");
 		if (data != null)
 		{
+			//formaciones NO VA UNAMIERDA
+			//JsonObject FormJSON = data.GetObject("formaciones");
+			//JsonObject trips = FormJSON.GetObject("trips");
+
 			JsonArray PlayersJSON = data.GetArray("players");
 			JsonArray TeamsJSON = data.GetArray("equipos");
 			for (uint i=0; i<TeamsJSON.GetSize(); i++)
@@ -62,8 +74,10 @@ class main : CometBehaviour
 	public void Update()
 	{
 	}
+
 	public void AddPlayersInScene(int IdTeam)
 	{
+		Vector2 MAGIADELCINE = new Vector2(200, 500);
 		List<Player> Players =  mTeams[IdTeam].Players;
 		for (int j =0; j<Players.Count; j++)
 		{
@@ -71,6 +85,8 @@ class main : CometBehaviour
 			PlayerScene.name = Players[j].Name;
 			PlayerScene.GetComponent<Player1>().move_player = PlayerScene.name == "Xavi";
 			PlayerScene.GetComponent<SpriteRenderer>().sprite = PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name);
+			PlayerScene.transform.position = new Vector3(MAGIADELCINE.x, (MAGIADELCINE.y + SUAU_TIENE_DIC) * -1, PlayerScene.transform.position.z);
+			SUAU_TIENE_DIC += 100;
 		}
 	}
 }

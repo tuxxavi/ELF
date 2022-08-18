@@ -4,7 +4,7 @@ using CometEngine;
 
 class Player1 : CometBehaviour
 {    
-    public float speed = 50;
+    public float speed = 1000;
 	public bool move_player = true;
 	private RigidBody mPlayer;
 

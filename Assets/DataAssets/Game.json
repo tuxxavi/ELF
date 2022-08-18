@@ -1,128 +1,153 @@
 {
-  "players": [
-    {
-      "id": 0,
-      "name": "Xavi",
-      "number": 76,
-      "position": "OL",
-      "fisic": 90,
-      "habilidad ": 90,
-      "velocidad": 50,
-      "potencia ": 90
-    },
-    {
-      "id": 1,
-      "name": "Nordi",
-      "number": 21,
-      "position": "RB",
-      "fisic": 90,
-      "habilidad ": 90,
-      "velocidad": 50,
-      "potencia ": 90
-    }
-  ],
-  "equipos": [
-    {
-      "id": 0,
-      "name": "Dragons",
-      "pais": "Spain",
-      "players": [
-        0
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Viena",
-      "pais": "Spain",
-      "players": [
-        1
-      ]
-    }
-  ],
-  "ligas": {
-    "elf": {
-      "name": "Elf",
-      "equipos ": [
-        1
-      ],
-      "eventos": [
-        {
-          "team_1": {
-            "id": 1,
-            "resultado": 0,
-            "timeouts": 3,
-            "touchdown": [
-              1
-            ]
-          },
-          "team_2": {
-            "id": 1,
-            "resultado": 0,
-            "timeouts": 3,
-            "touchdown": [
-              1
-            ]
-          },
-          "cuarto": 1,
-          "date": 55555,
-          "posesion": 1,
-          "intento": 1,
-          "yarda": 12
-        }
-      ],
-      "clasificación ": [
-        {
-          "equipo": 1,
-          "puntos ": 12,
-          "pf": 12,
-          "pc": 0,
-          "orden": 0,
-          "win": 1,
-          "lose": 0
-        }
-      ]
-    },
-    "fefa": {
-      "name": "Elf",
-      "equipos ": [
-        1
-      ],
-      "eventos": [
-        {
-          "team_1": {
-            "id": 1,
-            "resultado": 0,
-            "timeouts": 3,
-            "touchdown": [
-              1
-            ]
-          },
-          "team_2": {
-            "id": 1,
-            "resultado": 0,
-            "timeouts": 3,
-            "touchdown": [
-              1
-            ]
-          },
-          "cuarto": 1,
-          "date": 55555,
-          "posesion": 1,
-          "intento": 1,
-          "yarda": 12
-        }
-      ],
-      "clasificación ": [
-        {
-          "equipo": 1,
-          "puntos ": 12,
-          "pf": 12,
-          "pc": 0,
-          "orden": 0,
-          "win": 1,
-          "lose": 0
-        }
-      ]
-    }
-  }
+	"players": [
+		{
+			"id": 0,
+			"name": "Xavi",
+			"number": 76,
+			"position": "OL_LT",
+			"fisic": 90,
+			"habilidad ": 90,
+			"velocidad": 50,
+			"potencia ": 90
+		},
+		{
+			"id": 1,
+			"name": "Nordi",
+			"number": 21,
+			"position": "RB",
+			"fisic": 90,
+			"habilidad ": 90,
+			"velocidad": 50,
+			"potencia ": 90
+		},
+		{
+			"id": 2,
+			"name": "Urih",
+			"number": 21,
+			"position": "RB",
+			"fisic": 90,
+			"habilidad ": 90,
+			"velocidad": 50,
+			"potencia ": 90
+		}
+	],
+	"equipos": [
+		{
+			"id": 0,
+			"name": "Dragons",
+			"pais": "Spain",
+			"players": [
+				0,2
+			]
+		},
+		{
+			"id": 1,
+			"name": "Viena",
+			"pais": "Spain",
+			"players": [
+				1
+			]
+		}
+	],
+	"formaciones": {
+		"trips": {
+			"RB": [122, 200],
+			"QB": [122, 200],
+			"OL_LT": [122, 200],
+			"OL_LG": [122, 200],
+			"OL_C": [122, 200],
+			"OL_RG": [122, 200],
+			"OL_RT": [122, 200],
+			"WR_1": [122, 200],
+			"WR_2": [122, 200],
+			"WR_3": [122, 200],
+			"WR_4": [122, 200]
+		}
+	},
+	"ligas": {
+		"elf": {
+			"name": "Elf",
+			"equipos ": [
+				1
+			],
+			"eventos": [
+				{
+					"team_1": {
+						"id": 1,
+						"resultado": 0,
+						"timeouts": 3,
+						"touchdown": [
+							1
+						]
+					},
+					"team_2": {
+						"id": 1,
+						"resultado": 0,
+						"timeouts": 3,
+						"touchdown": [
+							1
+						]
+					},
+					"cuarto": 1,
+					"date": 55555,
+					"posesion": 1,
+					"intento": 1,
+					"yarda": 12
+				}
+			],
+			"clasificación ": [
+				{
+					"equipo": 1,
+					"puntos ": 12,
+					"pf": 12,
+					"pc": 0,
+					"orden": 0,
+					"win": 1,
+					"lose": 0
+				}
+			]
+		},
+		"fefa": {
+			"name": "Elf",
+			"equipos ": [
+				1
+			],
+			"eventos": [
+				{
+					"team_1": {
+						"id": 1,
+						"resultado": 0,
+						"timeouts": 3,
+						"touchdown": [
+							1
+						]
+					},
+					"team_2": {
+						"id": 1,
+						"resultado": 0,
+						"timeouts": 3,
+						"touchdown": [
+							1
+						]
+					},
+					"cuarto": 1,
+					"date": 55555,
+					"posesion": 1,
+					"intento": 1,
+					"yarda": 12
+				}
+			],
+			"clasificación ": [
+				{
+					"equipo": 1,
+					"puntos ": 12,
+					"pf": 12,
+					"pc": 0,
+					"orden": 0,
+					"win": 1,
+					"lose": 0
+				}
+			]
+		}
+	}
 }

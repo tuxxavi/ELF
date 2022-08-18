@@ -33,8 +33,8 @@
                         1
                     ],
                     "Scale": [
-                        1,
-                        1,
+                        2,
+                        2,
                         1
                     ]
                 },
@@ -67,7 +67,12 @@
                         {
                             "Type": 12,
                             "Name": "speed",
-                            "Value": 5
+                            "Value": 300
+                        },
+                        {
+                            "Type": 2,
+                            "Name": "move_player",
+                            "Value": true
                         }
                     ]
                 },
@@ -82,7 +87,7 @@
                     "LinearDrag": 0,
                     "AngularDrag": 0.05000000074505806,
                     "GravityScale": 0,
-                    "IsBullet": false,
+                    "IsBullet": true,
                     "Sleep": 2,
                     "FreezeRot": true,
                     "FreezeX": false,
@@ -93,8 +98,8 @@
                     "Enabled": true,
                     "ID": "3484882186998491298",
                     "Size": [
-                        0.52499997615814209,
-                        0.77499997615814209
+                        18,
+                        32
                     ],
                     "Dir": 0,
                     "Mat": "0",
