@@ -1,0 +1,32 @@
+{
+    "Script": "9277461248096484903",
+    "Fields": [
+        {
+            "Type": 29,
+            "Name": "PlayerSprites",
+            "Length": 1,
+            "ArrayType": 18,
+            "IsClass": true,
+            "Array": [
+                {
+                    "Value": [
+                        {
+                            "Type": 14,
+                            "Name": "IdName",
+                            "Value": "Dragons"
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "SpriteName",
+                            "Resource": "17183051848449549125",
+                            "SubResource": "3566585627604369884"
+                        }
+                    ],
+                    "Assembly": "1",
+                    "Namespace": "",
+                    "CName": "PlayerSpriteData"
+                }
+            ]
+        }
+    ]
+}
