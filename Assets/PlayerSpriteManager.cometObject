@@ -1,0 +1,50 @@
+{
+    "Script": "7315741165479461305",
+    "Fields": [
+        {
+            "Type": 29,
+            "Name": "PlayerSprites",
+            "Length": 2,
+            "ArrayType": 18,
+            "IsClass": true,
+            "Array": [
+                {
+                    "Value": [
+                        {
+                            "Type": 14,
+                            "Name": "IdName",
+                            "Value": "Dragons"
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "SpriteName",
+                            "Resource": "17183051848449549125",
+                            "SubResource": "3566585627604369884"
+                        }
+                    ],
+                    "Assembly": "1",
+                    "Namespace": "",
+                    "CName": "PlayerSpriteData"
+                },
+                {
+                    "Value": [
+                        {
+                            "Type": 14,
+                            "Name": "IdName",
+                            "Value": "Viena"
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "SpriteName",
+                            "Resource": "7736157210163963467",
+                            "SubResource": "15408693999611092174"
+                        }
+                    ],
+                    "Assembly": "1",
+                    "Namespace": "",
+                    "CName": "PlayerSpriteData"
+                }
+            ]
+        }
+    ]
+}
