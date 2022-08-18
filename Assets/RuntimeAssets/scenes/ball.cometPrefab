@@ -14,7 +14,7 @@
             "IsStatic": false,
             "IsPrefab": true,
             "Layer": 1,
-            "Tag": "Ball",
+            "Tag": "Untagged",
             "PrefabID": "7768339509561053098",
             "Components": [
                 {
@@ -70,6 +70,12 @@
                         0
                     ],
                     "Effector": false
+                },
+                {
+                    "Type": 4,
+                    "Enabled": true,
+                    "ID": "2659373544078424877",
+                    "ScriptID": "12644903588911328111"
                 }
             ]
         }

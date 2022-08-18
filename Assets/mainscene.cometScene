@@ -72,7 +72,13 @@
                     "Enabled": true,
                     "ID": "8222677406623834339",
                     "ScriptID": "7649110233695645980",
-                    "Fields": []
+                    "Fields": [
+                        {
+                            "Type": 18,
+                            "Name": "PlayerSprite",
+                            "Resource": "11377722003521778341"
+                        }
+                    ]
                 }
             ]
         },

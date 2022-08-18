@@ -18,6 +18,7 @@ class Team
 class main : CometBehaviour
 {
 	private List<Team> mTeams = new List<Team>();
+	public PlayerSprite PlayerSprite;
 
 	// Called before first frame
 	public void Start()
@@ -69,7 +70,7 @@ class main : CometBehaviour
 			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
 			PlayerScene.name = Players[j].Name;
 			PlayerScene.GetComponent<Player1>().move_player = PlayerScene.name == "Xavi";
-			//PlayerScene.GetComponent<SpriteRenderer>().sprite = GetSprite(mTeams[IdTeam].Sprite);
+			PlayerScene.GetComponent<SpriteRenderer>().sprite = PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name);
 		}
 	}
 }
