@@ -66,9 +66,10 @@ class main : CometBehaviour
 		List<Player> Players =  mTeams[IdTeam].Players;
 		for (int j =0; j<Players.Count; j++)
 		{
-			GameObject PlayerScene = RuntimeAssets.LoadGameObject("scenes/Player0");
-			//PlayerScene.name = Players[j].Name;
-			print(CometEngine.Object.Instantiate(PlayerScene) != null);
+			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
+			PlayerScene.name = Players[j].Name;
+			PlayerScene.GetComponent<Player1>().move_player = PlayerScene.name == "Xavi";
+			//PlayerScene.GetComponent<SpriteRenderer>().sprite = GetSprite(mTeams[IdTeam].Sprite);
 		}
 	}
 }
