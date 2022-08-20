@@ -13,22 +13,57 @@
 		{
 			"id": 1,
 			"name": "Nordi",
-			"number": 21,
-			"position": "RB",
-			"fisic": 90,
-			"habilidad ": 90,
-			"velocidad": 50,
-			"potencia ": 90
+			"position": "RB"
 		},
 		{
 			"id": 2,
-			"name": "Urih",
-			"number": 21,
-			"position": "RB",
-			"fisic": 90,
-			"habilidad ": 90,
-			"velocidad": 50,
-			"potencia ": 90
+			"name": "Urih 2",
+			"position": "QB"
+		},
+		{
+			"id": 3,
+			"name": "Urih 3",
+			"position": "OL_LG"
+		},
+		{
+			"id": 4,
+			"name": "Urih 4",
+			"position": "OL_C"
+		},
+		{
+			"id": 5,
+			"name": "Urih 5",
+			"position": "OL_RT"
+		},
+		{
+			"id": 6,
+			"name": "Urih 6",
+			"position": "OL_RG"
+		},
+		{
+			"id": 7,
+			"name": "Urih 7",
+			"position": "WR1"
+		},
+		{
+			"id": 8,
+			"name": "Urih 8",
+			"position": "WR2"
+		},
+		{
+			"id": 9,
+			"name": "Urih 9",
+			"position": "WR3"
+		},
+		{
+			"id": 10,
+			"name": "Urih 10",
+			"position": "WR4"
+		},
+		{
+			"id": 11,
+			"name": "Urih 11",
+			"position": "RB"
 		}
 	],
 	"equipos": [
@@ -37,7 +72,7 @@
 			"name": "Dragons",
 			"pais": "Spain",
 			"players": [
-				0,2
+				0,2,3,4,5,6,7,8,9,10,11
 			]
 		},
 		{
@@ -45,23 +80,23 @@
 			"name": "Viena",
 			"pais": "Spain",
 			"players": [
-				1
+				
 			]
 		}
 	],
 	"formaciones": {
 		"trips": {
-			"RB": [122, 200],
-			"QB": [122, 200],
-			"OL_LT": [122, 200],
-			"OL_LG": [122, 200],
-			"OL_C": [122, 200],
-			"OL_RG": [122, 200],
-			"OL_RT": [122, 200],
-			"WR_1": [122, 200],
-			"WR_2": [122, 200],
-			"WR_3": [122, 200],
-			"WR_4": [122, 200]
+			"RB": [352, 640],
+			"QB": [322, 540],
+			"OL_LT": [510, 340],
+			"OL_LG": [515, 440],
+			"OL_C": [520, 540],
+			"OL_RG": [515, 640],
+			"OL_RT": [510, 740],
+			"WR1": [422, 100],
+			"WR2": [422, 200],
+			"WR3": [422, 900],
+			"WR4": [422, 1000]
 		}
 	},
 	"ligas": {

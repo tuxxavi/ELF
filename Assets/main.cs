@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using CometEngine;
 using CometEngine.Json;
 
-using PLayerFormation = System.Collections.Generic.Dictionary<System.String, CometEngine.Vector2>;
+using PLayerFormation = System.Collections.Generic.Dictionary<System.String, int[]>;
 
 class Player
 {
 	public int Id;
 	public String Name;
+	public String Position;
 }
 
 class Team
@@ -26,8 +27,6 @@ class main : CometBehaviour
 	private Dictionary<String, PLayerFormation> mFormaciones = new Dictionary<String, PLayerFormation>();
 	public PlayerSprite PlayerSprite = null;
 
-	int SUAU_TIENE_DIC = 0;
-
 	// Called before first frame
 	public void Start()
 	{
@@ -36,8 +35,19 @@ class main : CometBehaviour
 		if (data != null)
 		{
 			//formaciones NO VA UNAMIERDA
-			//JsonObject FormJSON = data.GetObject("formaciones");
-			//JsonObject trips = FormJSON.GetObject("trips");
+			JsonObject FormJSON = data.GetObject("formaciones");
+			JsonKey[] keys = FormJSON.GetKeys();
+			for (int i=0; i<keys.Length; i++)
+			{
+				JsonKey[] value = FormJSON.GetObject(keys[i].key).GetKeys();
+				PLayerFormation Data = new PLayerFormation();
+				for (int j=0; j<value.Length; j++)
+				{
+					int[] position = FormJSON.GetObject(keys[i].key).GetIntArray(value[j].key);
+					Data.Add(value[j].key, position);
+				}
+				mFormaciones.Add(keys[i].key, Data);
+			}
 
 			JsonArray PlayersJSON = data.GetArray("players");
 			JsonArray TeamsJSON = data.GetArray("equipos");
@@ -55,6 +65,7 @@ class main : CometBehaviour
 						Player player = new Player();
 						player.Id = info.GetInt("id");
 						player.Name = info.GetString("name");
+						player.Position = info.GetString("position");
 						Data.Players.Add(player);
 					}
 					mTeams.Add(Data);
@@ -77,16 +88,15 @@ class main : CometBehaviour
 
 	public void AddPlayersInScene(int IdTeam)
 	{
-		Vector2 MAGIADELCINE = new Vector2(200, 500);
 		List<Player> Players =  mTeams[IdTeam].Players;
 		for (int j =0; j<Players.Count; j++)
 		{
 			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
 			PlayerScene.name = Players[j].Name;
+			int[] position = mFormaciones["trips"][Players[j].Position];
 			PlayerScene.GetComponent<Player1>().move_player = PlayerScene.name == "Xavi";
 			PlayerScene.GetComponent<SpriteRenderer>().sprite = PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name);
-			PlayerScene.transform.position = new Vector3(MAGIADELCINE.x, (MAGIADELCINE.y + SUAU_TIENE_DIC) * -1, PlayerScene.transform.position.z);
-			SUAU_TIENE_DIC += 100;
+			PlayerScene.transform.position = new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z);
 		}
 	}
 }
