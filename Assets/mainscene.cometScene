@@ -133,9 +133,8 @@
                     "FlipX": false,
                     "FlipY": false,
                     "Sort": true,
-                    "Material": "0",
-                    "UsesLight": false,
-                    "OrderInLayer": 0,
+                    "Material": "9",
+                    "OrderInLayer": -1,
                     "SortingLayerName": "Default"
                 }
             ]
@@ -192,8 +191,7 @@
                     "FlipX": false,
                     "FlipY": false,
                     "Sort": true,
-                    "Material": "0",
-                    "UsesLight": false,
+                    "Material": "9",
                     "OrderInLayer": 0,
                     "SortingLayerName": "Default"
                 },

@@ -1,27 +1,41 @@
 using System;
 using CometEngine;
+using CometEngine.UI;
 
 class Player1 : CometBehaviour
 {    
     public float speed = 1000;
 	public bool move_player = true;
-	public int[][] automove;
 	public int time_to_update_seconds;
+
+	public Text RefTextUp;
+	public Text RefTextDown;
+	public Text RefTextPosi;
+
 	private RigidBody mPlayer;
+	private SpriteRenderer mRender;
 	private Timer mTimer;
 
 	// Called before first frame
 	public void Start()
 	{
 		mPlayer = GetComponent<RigidBody>();
+		mRender = GetComponent<SpriteRenderer>();
+		//@todo mierda hasta tener la version y el bugazooooo, PAGAA
+		RefTextDown = gameObject.GetChild("info").GetChild("down").GetComponent<Text>();
+		RefTextUp = gameObject.GetChild("info").GetChild("up").GetComponent<Text>();
+		RefTextPosi = gameObject.GetChild("info").GetChild("posi").GetComponent<Text>();
 	}
 
-	public void initialize(String name_param, Vector3 position, Sprite Sprite)
+	public void initialize(Player player, Vector3 position, Sprite Sprite)
 	{
-		GetComponentInParent<SpriteRenderer>().name = name_param;
-		move_player = name == "Xavi";
-		GetComponentInParent<SpriteRenderer>().sprite = Sprite;
-		this.transform.position = position;
+		gameObject.name = player.Name+"_"+player.Position;
+		move_player = player.Name == "Xavi";
+		mRender.sprite = Sprite;
+		transform.position = position;
+		RefTextDown.text = player.Number+"";
+		RefTextUp.text = player.Number+"";
+		RefTextPosi.text = player.Position;
 	}
 
 	public void StartTimer()

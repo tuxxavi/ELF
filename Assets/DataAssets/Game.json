@@ -4,7 +4,7 @@
 			"id": 0,
 			"name": "Xavi",
 			"number": 76,
-			"position": "OL_LT",
+			"position": "LT",
 			"fisic": 90,
 			"habilidad ": 90,
 			"velocidad": 50,
@@ -13,57 +13,68 @@
 		{
 			"id": 1,
 			"name": "Nordi",
-			"position": "RB"
+			"position": "RB",
+			"number": 21
 		},
 		{
 			"id": 2,
 			"name": "Urih 2",
-			"position": "QB"
+			"position": "QB",
+			"number": 12
 		},
 		{
 			"id": 3,
 			"name": "Urih 3",
-			"position": "OL_LG"
+			"position": "LG",
+			"number": 70
 		},
 		{
 			"id": 4,
 			"name": "Urih 4",
-			"position": "OL_C"
+			"position": "C",
+			"number": 71
 		},
 		{
 			"id": 5,
 			"name": "Urih 5",
-			"position": "OL_RT"
+			"position": "RT",
+			"number": 72
 		},
 		{
 			"id": 6,
 			"name": "Urih 6",
-			"position": "OL_RG"
+			"position": "RG",
+			"number": 73
 		},
 		{
 			"id": 7,
 			"name": "Urih 7",
-			"position": "WR1"
+			"position": "WR1",
+			"number": 22
 		},
 		{
 			"id": 8,
 			"name": "Urih 8",
-			"position": "WR2"
+			"position": "WR2",
+			"number": 23
 		},
 		{
 			"id": 9,
 			"name": "Urih 9",
-			"position": "WR3"
+			"position": "WR3",
+			"number": 25
 		},
 		{
 			"id": 10,
 			"name": "Urih 10",
-			"position": "WR4"
+			"position": "WR4",
+			"number": 26
 		},
 		{
 			"id": 11,
 			"name": "Urih 11",
-			"position": "RB"
+			"position": "RB",
+			"number": 6
 		}
 	],
 	"equipos": [
@@ -94,19 +105,19 @@
 			"QB": {
 				"init": [322, 540]
 				},
-			"OL_LT": {
+			"LT": {
 				"init": [510, 340]
 				},
-			"OL_LG": {
+			"LG": {
 				"init": [515, 440]
 				},
-			"OL_C": {
+			"C": {
 				"init": [520, 540]
 				},
-			"OL_RG": {
+			"RG": {
 				"init": [515, 640]
 				},
-			"OL_RT": {
+			"RT": {
 				"init": [510, 740]
 				},
 			"WR1": {

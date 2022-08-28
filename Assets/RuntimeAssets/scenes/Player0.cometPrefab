@@ -74,15 +74,33 @@
                             "Value": true
                         },
                         {
-                            "Type": 29,
-                            "Name": "automove",
-                            "Length": 0,
-                            "ArrayType": 29
-                        },
-                        {
                             "Type": 8,
                             "Name": "time_to_update_seconds",
                             "Value": 0
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "RefTextUp",
+                            "GOID": "11708751958737460976",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "RefTextDown",
+                            "GOID": "3556654817955863568",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
+                        },
+                        {
+                            "Type": 18,
+                            "Name": "RefTextPosi",
+                            "GOID": "9515379096299682873",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
                         }
                     ]
                 },
@@ -224,15 +242,15 @@
                     ],
                     "Size": [
                         50,
-                        70
+                        66
                     ],
                     "Left": -25,
                     "Right": -25,
-                    "Top": -35,
-                    "Bottom": -35,
+                    "Top": -33,
+                    "Bottom": -33,
                     "Position": [
                         1.6689300537109375e-06,
-                        1.9999986886978149,
+                        -1.3113021850585938e-06,
                         0
                     ],
                     "Rotation": [
@@ -302,15 +320,15 @@
                     ],
                     "Size": [
                         50,
-                        70
+                        64
                     ],
                     "Left": -25,
                     "Right": -25,
-                    "Top": -35,
-                    "Bottom": -35,
+                    "Top": -32,
+                    "Bottom": -32,
                     "Position": [
                         1.6689300537109375e-06,
-                        -4.0000014305114746,
+                        -1.430511474609375e-06,
                         0
                     ],
                     "Rotation": [

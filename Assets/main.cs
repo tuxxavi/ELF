@@ -13,6 +13,7 @@ class Player
 	public int Id;
 	public String Name;
 	public String Position;
+	public int Number;
 }
 
 class Team
@@ -70,6 +71,7 @@ class main : CometBehaviour
 						player.Id = info.GetInt("id");
 						player.Name = info.GetString("name");
 						player.Position = info.GetString("position");
+						player.Number = info.GetInt("number");
 						Data.Players.Add(player);
 					}
 					mTeams.Add(Data);
@@ -97,7 +99,7 @@ class main : CometBehaviour
 		{
 			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
 			int[] position = GetPositionFormation("trips", Players[j].Position);
-			PlayerScene.GetComponent<Player1>().initialize(Players[j].Name,
+			PlayerScene.GetComponent<Player1>().initialize(Players[j],
 				new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z),
 				PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name));
 		}
