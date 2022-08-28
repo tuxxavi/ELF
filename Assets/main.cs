@@ -96,30 +96,15 @@ class main : CometBehaviour
 		for (int j =0; j<Players.Count; j++)
 		{
 			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
-			PlayerScene.name = Players[j].Name;
 			int[] position = GetPositionFormation("trips", Players[j].Position);
-			PlayerScene.GetComponent<Player1>().move_player = PlayerScene.name == "Xavi";
-			PlayerScene.GetComponent<SpriteRenderer>().sprite = PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name);
-			PlayerScene.transform.position = new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z);
+			PlayerScene.GetComponent<Player1>().initialize(Players[j].Name,
+				new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z),
+				PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name));
 		}
 	}
 
 	private int[] GetPositionFormation(string jugada, string position, string tag = "init")
 	{
-		foreach (string trips in mFormaciones.Keys) 
-		{ 
-			//print("1:" + trips);
-			foreach (string rb in mFormaciones[trips].Keys) 
-			{ 
-				//print("2:" + rb);
-				foreach (string init in mFormaciones[trips][rb].Keys) 
-				{ 
-					//print("3:" + mFormaciones[trips][rb][init][0]);
-				}
-			}
-		} 
 		return mFormaciones[jugada][position][tag];
-		/*
-		*/
 	}
 }

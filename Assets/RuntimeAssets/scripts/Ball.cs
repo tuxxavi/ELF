@@ -22,4 +22,5 @@ class Ball : CometBehaviour
 			gameObject.parent = aColl.gameObject;
 		}
 	}
+
 }
