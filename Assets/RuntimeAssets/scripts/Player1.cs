@@ -1,20 +1,23 @@
 using System;
 using CometEngine;
 using CometEngine.UI;
+using System.Collections.Generic;
 
 class Player1 : CometBehaviour
 {    
     public float speed = 1000;
 	public bool move_player = true;
-	public int time_to_update_seconds;
 
-	public Text RefTextUp;
-	public Text RefTextDown;
-	public Text RefTextPosi;
+	public Text RefTextUp = null;
+	public Text RefTextDown = null;
+	public Text RefTextPosi = null;
 
-	private RigidBody mPlayer;
-	private SpriteRenderer mRender;
-	private Timer mTimer;
+	private RigidBody mPlayer = null;
+	private SpriteRenderer mRender = null;
+	private Timer mTimer = null;
+	private float mTimeToUpdateSeconds = 0;
+
+	private List<int[]> mRoutePlayer = new List<int[]>();
 
 	// Called before first frame
 	public void Start()
@@ -27,7 +30,7 @@ class Player1 : CometBehaviour
 		RefTextPosi = gameObject.GetChild("info").GetChild("posi").GetComponent<Text>();
 	}
 
-	public void initialize(Player player, Vector3 position, Sprite Sprite)
+	public void initialize(Player player, Vector3 position, Sprite Sprite, float aTimeUpdate)
 	{
 		gameObject.name = player.Name+"_"+player.Position;
 		move_player = player.Name == "Xavi";
@@ -36,13 +39,18 @@ class Player1 : CometBehaviour
 		RefTextDown.text = player.Number+"";
 		RefTextUp.text = player.Number+"";
 		RefTextPosi.text = player.Position;
+		mTimeToUpdateSeconds = aTimeUpdate;
+		//@todo
+		mRoutePlayer.Add(new int[]{500, 0});
+		mRoutePlayer.Add(new int[]{300, 300});
+		StartTimer();
 	}
 
 	public void StartTimer()
 	{
 		mTimer = gameObject.AddComponent<Timer>();
-		mTimer.wait_time_in_seconds = time_to_update_seconds;
-		mTimer.SendEventScript += novanada;
+		mTimer.wait_time_in_seconds = mTimeToUpdateSeconds;
+		mTimer.SendEventScript += update_move;
 		mTimer.loop = move_player;
 		mTimer.StartTimer();
 	}
@@ -76,8 +84,13 @@ class Player1 : CometBehaviour
 		}
 	}
 
-	public void novanada()
+	public void update_move()
 	{
-		print("dsdsd");
+		if (mRoutePlayer.Count > 0)
+		{
+			print("muevo x:" + mRoutePlayer[0][0] + " y:" + mRoutePlayer[0][1]);
+			mPlayer.position += new Vector2(mRoutePlayer[0][0], mRoutePlayer[0][1]);
+			mRoutePlayer.RemoveAt(0);
+		}
 	}
 }

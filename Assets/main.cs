@@ -101,7 +101,8 @@ class main : CometBehaviour
 			int[] position = GetPositionFormation("trips", Players[j].Position);
 			PlayerScene.GetComponent<Player1>().initialize(Players[j],
 				new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z),
-				PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name));
+				PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name),
+				1);
 		}
 	}
 

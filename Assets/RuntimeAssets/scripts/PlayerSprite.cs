@@ -5,15 +5,15 @@ using CometEngine;
 
 class PlayerSpriteData
 {
-	public String IdName;
-	public Sprite SpriteName;
+	public String IdName="";
+	public Sprite SpriteName=null;
 }
 
 
 [AssetMenu("PlayerSpriteManager", "PlayerSpriteManager")]
 class PlayerSprite : CometObject
 {
-	public PlayerSpriteData[] PlayerSprites;
+	public PlayerSpriteData[] PlayerSprites = null;
 
 	public Sprite GetSpriteByName(String aName)
 	{

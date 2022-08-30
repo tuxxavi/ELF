@@ -7,8 +7,8 @@ class Timer : CometBehaviour
     public float wait_time_in_seconds;
     public bool loop = false;
     [Serialize] //trampa para que sea publica
-    private CometEvent SendEvent;
-    public event CometDelegate SendEventScript;
+    private CometEvent SendEvent = null;
+    public event CometDelegate SendEventScript = null;
 
     public void Start()
 	{
