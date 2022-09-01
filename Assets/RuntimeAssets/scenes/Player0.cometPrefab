@@ -74,21 +74,28 @@
                             "Value": true
                         },
                         {
-                            "Type": 8,
-                            "Name": "time_to_update_seconds",
-                            "Value": 0
+                            "Type": 18,
+                            "Name": "RefTextUp",
+                            "GOID": "11708751958737460976",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
                         },
                         {
                             "Type": 18,
-                            "Name": "RefTextUp"
+                            "Name": "RefTextDown",
+                            "GOID": "3556654817955863568",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
                         },
                         {
                             "Type": 18,
-                            "Name": "RefTextDown"
-                        },
-                        {
-                            "Type": 18,
-                            "Name": "RefTextPosi"
+                            "Name": "RefTextPosi",
+                            "GOID": "9515379096299682873",
+                            "IsMainPrefab": false,
+                            "CompType": 47,
+                            "Index": 1
                         }
                     ]
                 },

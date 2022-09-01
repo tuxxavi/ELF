@@ -8,6 +8,7 @@ class Player1 : CometBehaviour
     public float speed = 1000;
 	public bool move_player = true;
 
+
 	public Text RefTextUp = null;
 	public Text RefTextDown = null;
 	public Text RefTextPosi = null;
@@ -16,8 +17,9 @@ class Player1 : CometBehaviour
 	private SpriteRenderer mRender = null;
 	private Timer mTimer = null;
 	private float mTimeToUpdateSeconds = 0;
+	private bool mStopLastMove = true;
 
-	private List<int[]> mRoutePlayer = new List<int[]>();
+	private List<Vector2> mRoutePlayer = new List<Vector2>();
 
 	// Called before first frame
 	public void Start()
@@ -30,20 +32,28 @@ class Player1 : CometBehaviour
 		RefTextPosi = gameObject.GetChild("info").GetChild("posi").GetComponent<Text>();
 	}
 
-	public void initialize(Player player, Vector3 position, Sprite Sprite, float aTimeUpdate)
+	public void initialize(Player player, Vector3 PosiInit, int[] PosiRoute, Sprite Sprite, float aTimeUpdate, bool aStopLastMove)
 	{
 		gameObject.name = player.Name+"_"+player.Position;
-		move_player = player.Name == "Xavi";
+		move_player = player.Name == "Urih 2";
 		mRender.sprite = Sprite;
-		transform.position = position;
+		transform.position = PosiInit;
 		RefTextDown.text = player.Number+"";
 		RefTextUp.text = player.Number+"";
 		RefTextPosi.text = player.Position;
 		mTimeToUpdateSeconds = aTimeUpdate;
-		//@todo
-		mRoutePlayer.Add(new int[]{500, 0});
-		mRoutePlayer.Add(new int[]{300, 300});
-		StartTimer();
+		mStopLastMove = aStopLastMove;
+
+		for (int i=0; i<PosiRoute.Length; i++)
+		{
+			mRoutePlayer.Add(new Vector2(PosiRoute[i], PosiRoute[i+1]));
+			i++;
+		}
+		
+		if (!move_player)
+		{
+			StartTimer();
+		}
 	}
 
 	public void StartTimer()
@@ -51,7 +61,7 @@ class Player1 : CometBehaviour
 		mTimer = gameObject.AddComponent<Timer>();
 		mTimer.wait_time_in_seconds = mTimeToUpdateSeconds;
 		mTimer.SendEventScript += update_move;
-		mTimer.loop = move_player;
+		mTimer.loop = true;
 		mTimer.StartTimer();
 	}
 
@@ -82,15 +92,29 @@ class Player1 : CometBehaviour
 
 			mPlayer.position = move; 
 		}
+		else if (mRoutePlayer.Count > 0 && !move_player)
+		{
+			mPlayer.position = Vector2.Lerp(mPlayer.position, 
+											mPlayer.position + mRoutePlayer[0],
+											Time.deltaTime);
+		}
+		else if (!mStopLastMove)
+		{
+			mPlayer.position = Vector2.Lerp(mPlayer.position, 
+											mPlayer.position + new Vector2(50, 0),
+											Time.deltaTime);
+		}
 	}
 
 	public void update_move()
 	{
-		if (mRoutePlayer.Count > 0)
+		if (mRoutePlayer.Count > 0 && !move_player)
 		{
-			print("muevo x:" + mRoutePlayer[0][0] + " y:" + mRoutePlayer[0][1]);
-			mPlayer.position += new Vector2(mRoutePlayer[0][0], mRoutePlayer[0][1]);
 			mRoutePlayer.RemoveAt(0);
+		}
+		else
+		{
+			mTimer.enabled= false;
 		}
 	}
 }

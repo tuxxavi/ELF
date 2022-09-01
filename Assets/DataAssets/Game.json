@@ -100,37 +100,58 @@
 		"trips": 
 		{
 			"RB": {
-				"init": [352, 640]
+				"init": [352, 640],
+				"route": [50,400],
+				"stop_last_move": [0,0]
 				},
 			"QB": {
-				"init": [322, 540]
+				"init": [322, 540],
+				"stop_last_move": [1,1]
 				},
 			"LT": {
-				"init": [510, 340]
+				"init": [510, 340],
+				"route": [10,0],
+				"stop_last_move": [1,1]
 				},
 			"LG": {
-				"init": [515, 440]
+				"init": [515, 440],
+				"route": [10,0],
+				"stop_last_move": [1,1]
 				},
 			"C": {
-				"init": [520, 540]
+				"init": [520, 540],
+				"route": [10,0],
+				"stop_last_move": [1,1]
 				},
 			"RG": {
-				"init": [515, 640]
+				"init": [515, 640],
+				"route": [10,0],
+				"stop_last_move": [1,1]
 				},
 			"RT": {
-				"init": [510, 740]
+				"init": [510, 740],
+				"route": [10,0],
+				"stop_last_move": [1,1]
 				},
 			"WR1": {
-				"init": [422, 100]
+				"init": [422, 100],
+				"route": [200,0,200,-400],
+				"stop_last_move": [0,0]
 				},
 			"WR2": {
-				"init": [422, 200]
+				"init": [422, 200],
+				"route": [200,0,0,-400],
+				"stop_last_move": [0,0]
 				},
 			"WR3": {
-				"init": [422, 900]
+				"init": [422, 900],
+				"route": [500,0],
+				"stop_last_move": [0,0]
 				},
 			"WR4": {
-				"init": [422, 1000]
+				"init": [422, 1000],
+				"route": [200,0,200,400],
+				"stop_last_move": [0,0]
 				}
 		}
 	},

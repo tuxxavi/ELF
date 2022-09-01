@@ -49,6 +49,10 @@ class main : CometBehaviour
 					Route Route = new Route();
 					int[] position_init = FormJSON.GetObject(keys[i].key).GetObject(value[j].key).GetIntArray("init");
 					Route.Add("init", position_init);
+					int[] position_route = FormJSON.GetObject(keys[i].key).GetObject(value[j].key).GetIntArray("route");
+					Route.Add("route", position_route);
+					int[] stop_last_move = FormJSON.GetObject(keys[i].key).GetObject(value[j].key).GetIntArray("stop_last_move");
+					Route.Add("stop_last_move", stop_last_move);
 					Data.Add(value[j].key, Route);
 				}
 				mFormaciones.Add(keys[i].key, Data);
@@ -79,7 +83,6 @@ class main : CometBehaviour
 			}
 		}
 		data.Free();
-
 		
 		for (int i =0; i<mTeams.Count; i++)
 		{
@@ -98,11 +101,16 @@ class main : CometBehaviour
 		for (int j =0; j<Players.Count; j++)
 		{
 			GameObject PlayerScene = CometEngine.Object.Instantiate(RuntimeAssets.LoadGameObject("scenes/Player0"));
-			int[] position = GetPositionFormation("trips", Players[j].Position);
+			int[] posi_init = GetPositionFormation("trips", Players[j].Position);
+			int[] posi_route = GetPositionFormation("trips", Players[j].Position, "route");
+			int[] stop_last_move = GetPositionFormation("trips", Players[j].Position, "stop_last_move");
+			
 			PlayerScene.GetComponent<Player1>().initialize(Players[j],
-				new Vector3(position[0], position[1] * -1, PlayerScene.transform.position.z),
+				new Vector3(posi_init[0], posi_init[1] * -1, PlayerScene.transform.position.z),
+				posi_route,
 				PlayerSprite.GetSpriteByName(mTeams[IdTeam].Name),
-				1);
+				1,
+				stop_last_move[0] == 1);
 		}
 	}
 
